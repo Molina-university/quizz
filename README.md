@@ -1,18 +1,16 @@
-## Getting Started
+Un número amigo es aquel que tiene exactamente dos divisores distintos diferentes de 1 y él mismo. Por ejemplo, 6 es un número amigo porque sus únicos divisores son 2 y 3. Escribe un programa que:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+- Solicite al usuario un rango de números (inicio y fin)
+- Encuentre todos los números amigos dentro de ese rango
+- Para cada número amigo encontrado, muestre también sus divisores
 
-## Folder Structure
+rt/
 
-The workspace contains two folders by default, where:
+Primero buscaria una funcion scanner para pedir los numeros al usuario
+suponiendo un rango normal 1-10 usaria una funcion for y determinaria el siguiente criterio
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+primero: si el numero es primo se descarta porque solo tiene divisor el 1 y el mismo (descarta todos los numeros primos y los numeros impares)
+segundo: si el numero es divisible por mas de dos se descarta (quitaria algunos pares y numeros grandes)
+tercero: si el numero cumple la condicion de tener dos divisores diferentes de 1 y el mismo tendria que almacenarlo en otra variable para crear una especie de lista
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+una vez encontrado la manera de hacer que eso funcione milagrosamente, se muestra la lista y despues tendria que mostrar a cada elemento de la lista los numeros que le son divisibles a el (lo cual no tengo ni la menor idea de como xD)
